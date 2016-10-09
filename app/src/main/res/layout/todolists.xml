@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <ListView
+        android:id="@+id/itemLists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnNewList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+    </ListView>
+    <EditText
+        android:id="@+id/textNewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_new_item"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnNewList"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnNewList"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/btnNewList"
+        android:text="@string/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addList"/>
+</RelativeLayout>
